@@ -1,7 +1,7 @@
 {
   "name": "sofascorer",
-  "$schema": "node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "src",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/sofascorer/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -13,9 +13,9 @@
         "outputPath": "dist/sofascorer",
         "format": ["cjs"],
         "bundle": false,
-        "main": "src/main.ts",
-        "tsConfig": "tsconfig.app.json",
-        "assets": ["src/assets"],
+        "main": "apps/sofascorer/src/main.ts",
+        "tsConfig": "apps/sofascorer/tsconfig.app.json",
+        "assets": ["apps/sofascorer/src/assets"],
         "generatePackageJson": true,
         "esbuildOptions": {
           "sourcemap": true,

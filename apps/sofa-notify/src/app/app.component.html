@@ -1,0 +1,35 @@
+
+@if (liveEvents$ | async; as liveEvents) {
+    @for (event of liveEvents; track $index) {
+      <div style="background-color: lightcyan; padding:2rem; margin: 2rem; border: 2px solid red;">
+        <!-- <pre>{{event | json}}</pre> -->
+        <div>🆔 {{event.id}}</div>
+        <b>{{event.homeTeam.name}} 🆚 {{ event.awayTeam.name}} 🏆 {{event.tournament.name}}</b>
+        <div>⚽ {{ event.homeScore.current }} - {{ event.awayScore.current}}  ⚽➕ SUM =  {{ event.homeScore.current + event.awayScore.current}}</div>
+        <div></div>
+  
+        <div style="display: flex; flex-wrap: wrap;">
+  
+        @for (stats of event.statistics; track $index) {
+          <div style="margin: 10px">
+          <b>{{stats.period}}</b>
+           @for (group of stats.groups; track $index) {
+            @if(group.groupName === 'Expected'){
+              <!-- <pre>{{group.statisticsItems | json}}</pre> -->
+              
+              <div>🫰{{group.statisticsItems[0].homeValue }} - {{group.statisticsItems[0].awayValue }} </div>
+  
+  
+              <div> 🫰➕: {{group.statisticsItems[0].homeValue + group.statisticsItems[0].awayValue }} 
+              </div>
+              }
+           }   
+          </div>
+        }
+        
+      </div>
+      </div>
+    }
+  } @else {
+    <div>No live events have Expected goals</div>
+  }

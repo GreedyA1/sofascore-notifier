@@ -3,7 +3,7 @@ export interface Root {
   }
   
   export interface Event {
-    statistics?: Statistic[];
+    statistics: Statistic[];
     tournament: Tournament
     season?: Season
     roundInfo?: RoundInfo
