@@ -6,7 +6,7 @@ import { Observable, catchError, forkJoin, map, of, switchMap, tap } from 'rxjs'
 import { Root, Event, RootStatistics, Statistic } from './types';
 
 @Component({
-  selector: 'app-root',
+  selector: 'sofascorer-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
