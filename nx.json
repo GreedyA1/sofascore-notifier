@@ -7,7 +7,9 @@
     "projectsRelationship": "independent",
     "changelog": {
       "automaticFromRef": true,
-      "projectChangelogs": true
+      "projectChangelogs": {
+        "createRelease": "github"
+      }
     },
     "projects": ["sofa-notify", "sofascorer"]
   },
