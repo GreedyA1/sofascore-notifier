@@ -63,5 +63,8 @@ export class AppComponent {
   constructor(private http: HttpClient) {
     console.log('YO YOOO YOOO more')
     console.log('add test log')
+    console.log('add test log')
+    console.log('add test log')
+    console.log('add test log')
   }
 }
