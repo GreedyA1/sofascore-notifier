@@ -72,5 +72,13 @@ export class AppComponent {
     console.log('add test log')
     console.log('add test log')
     console.log('add test log')
+    console.log('add test log')
+    console.log('add test log')
+    console.log('add test log')
+    console.log('add test log')
+    console.log('add test log')
+    console.log('add test log')
+    console.log('add test log')
+    console.log('add test log')
   }
 }
