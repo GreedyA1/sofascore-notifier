@@ -39,6 +39,7 @@ export class AppComponent {
       );
     })
   );
+
   
   
   // this.http.get<Root>('https://api.sofascore.com/api/v1/sport/football/events/live')
@@ -60,5 +61,7 @@ export class AppComponent {
     
 
   constructor(private http: HttpClient) {
+
+    console.log('add test log')
   }
 }
